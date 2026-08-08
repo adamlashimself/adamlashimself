@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Adam L. As Himself</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background: #e9b824;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+
+      width: min(88%, 560px);
+      padding-top: 7vh;
+
+      text-align: center;
+      color: #000;
+    }
+
+    .logo {
+      display: block;
+      width: min(100%, 420px);
+      height: auto;
+
+      margin: 0 auto 28px;
+    }
+
+    .tagline {
+      margin: 0 0 8px;
+
+      font-size: 1.35rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .signup-copy {
+      margin: 0 0 24px;
+
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .signup-form {
+      display: flex;
+      gap: 8px;
+
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .signup-form input {
+      flex: 1;
+
+      min-width: 0;
+      padding: 15px 16px;
+
+      border: 2px solid #000;
+      border-radius: 0;
+
+      background: #fff;
+      color: #000;
+
+      font: inherit;
+    }
+
+    .signup-form button {
+      padding: 15px 22px;
+
+      border: 2px solid #000;
+      border-radius: 0;
+
+      background: #000;
+      color: #fff;
+
+      font: inherit;
+      font-weight: 700;
+
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+
+      .hero-content {
+        width: 86%;
+        padding-top: 6vh;
+      }
+
+      .logo {
+        width: min(90%, 340px);
+        margin-bottom: 20px;
+      }
+
+      .tagline {
+        font-size: 1.15rem;
+      }
+
+      .signup-form {
+        flex-direction: column;
+      }
+
+      .signup-form button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="hero">
+
+    <img
+      src="hero.jpg"
+      alt="Adam L. As Himself"
+      class="hero-image"
+    >
+
+    <div class="hero-content">
+
+      <img
+        src="logo.png"
+        alt="Adam L. As Himself"
+        class="logo"
+      >
+
+      <p class="tagline">
+        Bop + Bap. Barz + Boardz.
+      </p>
+
+      <p class="signup-copy">
+        Sign up for my newsletter to stay up to date!
+      </p>
+
+      <form class="signup-form" action="#" method="post">
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email address"
+          aria-label="Email address"
+          required
+        >
+
+        <button type="submit">
+          Sign Me Up
+        </button>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
